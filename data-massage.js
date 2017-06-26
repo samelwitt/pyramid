@@ -1,7 +1,7 @@
-const gameData = require('./game-data')
+const gameData = require('./scratch')
 const fs = require('fs')
-let output = []
-//let output = gameData.split(',').reduce((prev, next, id) => prev + (id % 30 ? ',' : '\',\n\n\'') + next)
+//let output = []
+let output = gameData.split(',').reduce((prev, next, id) => prev + (id % 8 ? '\',\'' : '\'],\n\n[\'') + next)
 
 /*
 gameData.map((question, i, arr) => {
@@ -18,7 +18,7 @@ let json = {data: output}
 json = JSON.stringify(json)
 */
 
-gameData.data.map((question,i, arr) => {
+/*gameData.data.map((question,i, arr) => {
   output[i] = {
     title : question[0],
     description : question[1],
@@ -26,6 +26,6 @@ gameData.data.map((question,i, arr) => {
   }
 })
 
-let json = JSON.stringify(output)
+let json = JSON.stringify(output)*/
 
-fs.writeFileSync('./output.js', json, {})
+fs.writeFileSync('./output.js', output, {})
