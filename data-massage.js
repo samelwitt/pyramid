@@ -1,7 +1,35 @@
 const gameData = require('./scratch')
 const fs = require('fs')
-//let output = []
-let output = gameData.split(',').reduce((prev, next, id) => prev + (id % 8 ? '\',\'' : '\'],\n\n[\'') + next)
+let output = []
+//let output = gameData.split(',').reduce((prev, next, id) => prev + (id % 8 ? '\',\'' : '\'],\n\n[\'') + next)
+/*let output = gameData.split(',').reduce((prev, next, id) => {
+  let item = gameData[id].trim()
+  //console.log(next)
+  if (next.indexOf(' ') === 0) {
+    return prev + ('\'],\n[\'') + next.trim()
+  }
+  else return prev + ('\',\'') + next.trim()
+})*/
+
+//let l = gameData.length/6
+//
+//for (let i = 0; i <= l; i++) {
+//  output.push(gameData.slice(i*6,(i+1)*6))
+//}
+let gamesArr = []
+gameData.map((game, i, games) => {
+  let gameArr = []
+  game.map((category, j, categories) => {
+    gameArr.push({
+      title: category[0],
+      description: category[1],
+      items: category.slice(3)
+    })
+  })
+  gamesArr.push(gameArr)
+})
+
+//output = gameData.slice(0,6)
 
 /*
 gameData.map((question, i, arr) => {
@@ -27,5 +55,6 @@ json = JSON.stringify(json)
 })
 
 let json = JSON.stringify(output)*/
+let json = JSON.stringify(gamesArr)
 
-fs.writeFileSync('./output.js', output, {})
+fs.writeFileSync('./output.js', json, {})

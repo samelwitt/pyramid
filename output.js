@@ -1,349 +1,537 @@
-[['Things Used to Eat','A Fork','A Knife','A Spoon','A Fork','A Knife','A Spoon','A Knife'],
-
-[' Parts of the Heart','The Aorta','The Blood','The Valve','The Aorta','The Blood','The Valve','The Blood'],
-
-[' Things Used By_A Lifeguard','His Whistle','His Bathing Suit','His Watchtower','His Whistle','His Bathing Suit','His Watchtower','His Bathing Suit'],
-
-[' Things on a Patio','The Lawn Chairs','The Barbecue','The Picnic Table','The Lawn Chairs','The Barbecue','The Picnic Table','The Barbeque'],
-
-[' Things That can Soar','A Glider','An Eagle','A Kite','A Glider','An Eagle','A Kite','An Eagle'],
-
-[' Things That Are Crimes','Murder','Arson','Robbery','Murder','Arson','Robbery','Arson'],
-
-[' States in the West','California','Oregon','Nevada','California','Oregon','Nevada','Oregon'],
-
-[' Parts of a Stove','The Oven','The Burners','Pilot Light','The Oven','The Burners','Pilot Light','The Burners'],
-
-[' Things Made of Plastic','A Credit Card','Picnic Utensils','Disposable Bottle','A Credit Card','Picnic Utensils','Disposable Bottle','Picnic Utensils'],
-
-[' Things That Are Thick','A Porterhouse Steak','A Milkshake','Idiot','*s Skulls','A Porterhouse Steak','A Milkshake','Idiot'],
-
-['*s Skulls','A Milkshake',' Parts of an Arm','The Elbow','The Wrist','The Shoulder','The Elbow','The Wrist'],
-
-['The Shoulder','The Wrist',' Signs of Growing Old','Gray Hair','Wrinkles','Brittle Bones','Gray Hair','Wrinkles'],
-
-['Brittle Bones','Wrinkles',' Things That Can Sparkle','Diamonds','Polished Silver','A Clean Bathtub','Diamonds','Polished Silver'],
-
-['A Clean Bathtub','Polished Silver',' Things You Might Wish','Wealth','Success','Happiness','Wealth','Success'],
-
-['Happiness','Success',' Things You Can Change','A Flat Tire','A Dirty Diaper','Your Mind','A Flat Tire','A Dirty Diaper'],
-
-['Your Mind','A Dirty Diaper',' Things Found in Alaska','Eskimos','Nome','The Pipeline','Eskimos','Nome'],
-
-['The Pipeline','Nome',' Parts of a Stage','The Proscenium','The Curtain','Orchestra Pit','The Proscenium','The Curtain'],
-
-['Orchestra Pit','The Curtain',' Things That Can Race','Purebred Horse','A Greyhound','A Fast Car','Purebred Horse','A Greyhound'],
-
-['A Fast Car','A Greyhound',' Things At A Seance','The Medium','A Crystal Ball','A Spirit','The Medium','A Crystal Ball'],
-
-['A Spirit','A Crystal Ball',' Things In The Almanac','Crop Info','Weather Info','Predictions','Tide Schedules','Crop Info'],
-
-['Weather Info','Tide Schedules',' People In A Courtroom','The Judge','The Jury','The Defendant','The Judge','The Jury'],
-
-['The Defendant','The Jury',' These Are Female Animals','A Hen','A Mare','A Doe','A Hen','A Mare'],
-
-['A Doe','A Mare',' Things That Are Peeled','A Banana','Your Clothes','An Orange','A Banana','Your Clothes'],
-
-['An Orange','Your Clothes',' Some Kinds of Athletes','Marathon Runner','Football Player','A Gymnast','Marathon Runner','Football Player'],
-
-['A Gymnast','Football Player',' Things With A Flap','An Envelope','Dr. Denton Pjs','Airplane Wing','An Envelope','Dr. Denton Pjs'],
-
-['Airplane Wing','Dr. Denton Pjs',' These Are Baby Things','A Diaper','A Crib','A Rattle','A Diaper','A Crib'],
-
-['A Rattle','A Crib',' These Are Astrology Signs','Libra','Virgo','Pisces','Libra','Virgo'],
-
-['Pisces','Virgo',' Things On A Label','The Price','The Size','The Price','The Size','The Price'],
-
-['"Do Not Remove"','The Size',' Things That Are Dances','The Waltz','The Tango','The Twist','The Waltz','The Tango'],
-
-['The Twist','The Tango',' Things Said By Noah','I Have An Ark','I Like Animals','I Like Pairs','I Have An Ark','I Like Animals'],
-
-['I Like Pairs','I Like Animals',' Parts Of A Computer','The Disk Drive','The Screen','The Keyboard','The Disk Drive','The Screen'],
-
-['The Keyboard','The Screen',' Things That Are Brass','A Door Knocker','A Carousel Ring','Heavy Candlesticks','A Door Knocker','A Carousel Ring'],
-
-['Heavy Candlesticks','A Carousel Ring',' Things That Get Started','Car Ignition','A Race','A Stopwatch','Car Ignition','A Race'],
-
-['A Stopwatch','A Race',' Things In A Pitcher','Koolade','Ice Cubes','Martinis','Koolade','Ice Cubes'],
-
-['Martinis','Ice Cubes',' Things Used For Cleaning','Soap','A Sponge','A Mop','Soap','A Sponge'],
-
-['A Mop','A Sponge',' Things That Are Fads','The Hula Hoop','The Twist','The Mini Skirt','The Hula Hoop','The Twist'],
-
-['The Mini Skirt','The Twist',' Things On A Roof','The Shingles','The Chimney','Santa','The Shingles','The Chimney'],
-
-['Santa','The Chimney',' Things Made With Dough','A Pie Crust','Bread','A Cookie','A Pie Crust','Bread'],
-
-['A Cookie','Bread',' Things With A Slit','A Sexy Skirt','Venetian Blinds','A Pie Crust Top','A Sexy Skirt','Venetian Blinds'],
-
-['A Pie Crust Top','Venetian Blinds',' Parts Of A Piano','The Black Keys','The White Keys','The Pedals','The Black Keys','The White Keys'],
-
-['The Pedals','The White Keys',' These Cities Are Capitals','Washington D.C.','Sacramento','Boston','St. Paul','Providence'],
-
-['Pierre','Bismark',' Things That Are Fat','A Pig','Dom DeLuise','A Punched Lip','A Pig','Dom DeLuise'],
-
-['A Punched Lip','Dom DeLuise',' Things With An Eye','A Cyclops','A Needle','A Hurricane','A Cyclops','A Needle'],
-
-['A Hurricane','A Needle',' Things That Can Attack','An Angry Dog','An Army','Killer Tomatoes','An Angry Dog','An Army'],
-
-['Killer Tomatoes','An Army',' Parts of An Auto','The Steering Wheel','The Windshield','The Bumper','The Steering Wheel','The Windshield'],
-
-['The Bumper','The Windshield',' Things In A Movie','The Actors','The Script','The Storyline','The Actors','The Script'],
-
-['The Storyline','The Script',' Things That Are Straight','An Arrow','A Line','Cher','*s Hair','An Arrow'],
-
-['A Line','Cher','*s Hair','A Line',' Reasons You Might Sue','Alimony','Slander','Malpractice'],
-
-['Alimony','Slander','Malpractice','Slander',' Things That Are Wrong','Murder','A Bad Answer','Discrimination'],
-
-['Murder','A Bad Answer','Discrimination','A Bad Answer',' Things Found In Greece','Athens','The Parthenon','Crete'],
-
-['Athens','The Parthenon','Crete','The Parthenon',' Some Kinds Of Cake','Angel Food','Three Layer','Chocolate'],
-
-['Carrot','Upside-down','Wedding','Sponge',' Things That Are Rotten','Old Eggs','A Brat','Wet Wood'],
-
-['Old Eggs','A Brat','Wet Wood','A Brat',' Things That Can Balance','A Scale','A See Saw','A Budget'],
-
-['A Scale','A See Saw','A Budget','A See Saw',' Things That Are Narrow','A AAA Shoe','An Alley','A Closed Mind'],
-
-['A AAA Shoe','An Alley','A Closed Mind','An Alley',' Things In A Pageant','Contestants','Bert Parks','Swimsuit Competition'],
-
-['Contestants','Bert Parks','Swimsuit Competition','Bert Parks',' Parts Of A Shirt','The Sleeve','The Collar','The Buttons'],
-
-['The Tail','The Lapels','The Cuffs','The Tail',' Things Used By_A Baker','Cookie Sheet','Bread Tins','Oven'],
-
-['Mixing Bowl','Measuring Cup','Rolling Pin','Cake Pans',' Things That Are Wasted','Leftover Food','Surplus Money','Time'],
-
-['Leftover Food','Surplus Money','Time','Surplus Money',' Parts Of A Calendar','The Days','The Months','The Pages'],
-
-['The Days','The Months','The Pages','The Months',' Things That Can Hop','A Bunny','A Kangaroo','A Frog'],
-
-['A Bunny','A Kangaroo','A Frog','A Kangaroo',' Some Signs Of Affection','A Hug','A Kiss','A Gentle Touch'],
-
-['A Hug','A Kiss','A Gentle Touch','A Kiss',' These Things Are Natural','Trees','Sprouts','Wild Animals'],
-
-['Flowers','Trees','Sprouts','Wild Animals',' These Things Are Irritating','A Buzzing Fly','Little Brother','A Rash'],
-
-['A Buzzing Fly','Little Brother','A Rash','Little Brother',' Things Made Of Leather','A Saddle','A Belt','A Whip'],
-
-['A Saddle','A Belt','A Whip','A Belt',' Things Used By_A Cop','His Gun','His Badge','His Baton'],
-
-['His Gun','His Badge','His Baton','His Badge',' Things Found In_A Dining_Rm','The Large Table','China Cabinet','Place Settings'],
-
-['The Large Table','China Cabinet','Place Settings','China Cabinet',' Things That Are Acrobatic','A Somersault','A Cartwheel','A Split'],
-
-['A Somersault','A Cartwheel','A Split','A Cartwheel',' Things That Are Split','Sundae','*s Banana','Acrobat'],
-
-['*s Legs','Einstein','*s Atom','Sundae','*s Banana','Acrobat','*s Legs','Einstein'],
-
-['*s Atom','Acrobat','*s Legs',' Things With A Rim','Basketball Hoop','A Cliff','A Glass','Basketball Hoop'],
-
-['A Cliff','A Glass','A Cliff',' Things That Are Unlucky','Walking Under Ladders','Passing Black Cats','Spilling Salt','Breaking A Mirror'],
-
-['Umbrellas Indoors','Stepping On Cracks','Spilling Salt',' Things Used By Boxers','Gloves','Right Cross','Silk Trunks','Gloves'],
-
-['Right Cross','Silk Trunks','Right Cross',' Things That Are Sweaters','Turtleneck','Mohair','Cardigan','Camel'],
-
-['*s Hair','Turtleneck','Mohair','Cardigan',' Things On A Carousel','Wooden Horses','Brass Ring','Riding Children'],
-
-['Wooden Horses','Brass Ring','Riding Children','Brass Ring',' Things On A Tray','Tea Service','TV Dinner','Appetizers'],
-
-['Tea Service','TV Dinner','Appetizers','TV Dinner',' These Are Famous Prisons','Alcatraz','Sing Sing','Folsom State'],
-
-['San Quentin','Alcatraz','Sing Sing','Folsom State',' These Terms Are_For Golf','"Fore"','A "Birdie"','"Par"'],
-
-['The "Rough"','The "Fairway"','"Tee Off"','"Chip Shot"',' Things With Big Ears','Dumbo','A Rabbit','Clark Gable'],
-
-['Dumbo','A Rabbit','Clark Gable','A Rabbit',' Some Types Of Dresses','A Gown','A Mini','A Muu Muu'],
-
-['A Gown','A Mini','A Muu Muu','A Mini',' Things Used In Biology','Disected Frogs','Anatomy Chart','A Professor'],
-
-['Disected Frogs','Anatomy Chart','A Professor','Anatomy Chart',' Things That Are Sensitive','Finger Tips','Exposed Nerve','Feelings'],
-
-['Finger Tips','Exposed Nerve','Feelings','Exposed Nerve',' Parts Of A Pizza','Pepperoni','Tomato Sauce','Crust'],
-
-['Anchovies','Mozzerella','Tomato Sauce','Crust',' Some Clint Eastwood Movies','Dirty Harry','Tightrope','Fistfull Of Dollars'],
-
-['Dirty Harry','Tightrope','Fistfull Of Dollars','Tightrope',' These Things Are Slow','A Snail','The Tortoise','Molasses'],
-
-['A Snail','The Tortoise','Molasses','The Tortoise',' Things That Are Built','A New House','A New Bridge','A Career'],
-
-['A Reputation','A New House','A New Bridge','A Career',' Things That You Squeeze','The Charmin','A Lemon','A Teddy Bear'],
-
-['The Charmin','A Lemon','A Teddy Bear','A Lemon',' Things That Have Caps','Toothpaste Tubes','Baseball Player','*s Head'],
-
-['A Toy Gun','Toothpaste Tubes','Baseball Player','*s Head','A Toy Gun','Baseball Player','*s Head',' These Are Famous Airports'],
-
-['Ohare','Laguardia','LAX','Kennedy','Ohare','Laguardia','LAX',' Why You Might Kiss'],
-
-['You','*re In Love','You Like Lips','Because...','You','*re In Love','You Like Lips','Because...'],
-
-['You Like Lips',' These Body_Parts Are Bones','The Tibia','The Fibula','The Jaw','The Femur','The Radius','The Ulna'],
-
-['The Clavicle',' Things You Can Carry','A Suitcase','Groceries','A Baby','A Disease','A Suitcase','Groceries'],
-
-['A Baby',' Things In A Locker','Gym Socks','School Books','Homework','Gym Socks','School Books','Homework'],
-
-['School Books',' Things With A Crease','Pant Legs','Linen Skirts','Elderly Faces','Pant Legs','Linen Skirts','Elderly Faces'],
-
-['Linen Skirts',' Things In A Forest','Trees','A Ranger','Wild Animals','Flowers','Trees','A Ranger'],
-
-['Wild Animals',' Some Types Of Beds','A Bunk','A Trundle','A Cot','A Bunk','A Trundle','A Cot'],
-
-['A Trundle',' Things On A Shelf','Library Books','Dust','Canned Food','Library Books','Dust','Canned Food'],
-
-['Dust',' Things You Can Roll','A Bowling Ball','Dice','Dough','A Bowling Ball','Dice','Dough'],
-
-['Dice',' Things That Can Destroy','A Bomb','Earthquakes','A War','A Bomb','Earthquakes','A War'],
-
-['Earthquakes',' Some Kinds Of Wood','Mahogany','Cedar','Oak','Pine','Birch','Walnut'],
-
-['Cherry',' Why Go To_A Tailor','Alterations','You Can','*t Sew','Alterations','You Can','*t Sew'],
-
-['Alterations','You Can','*t Sew','Alterations',' Things That Can Fly','Birds','Planes','Superman'],
-
-['Birds','Planes','Superman','Planes',' Things You Throw Away','Your Trash','Rotten Food','Old Newspapers'],
-
-['Your Trash','Rotten Food','Old Newspapers','Rotten Food',' Things On A Dollar','Serial Number','Washington','Green Ink'],
-
-['Serial Number','Washington','Green Ink','Washington',' These Things Are Forbidden','Eve','*s Apple','X-Rated Movies'],
-
-['A Crime','Eve','*s Apple','X-Rated Movies','A Crime','X-Rated Movies',' Things In The Ocean','Fish'],
-
-['Salt Water','Ships','Fish','Salt Water','Ships','Salt Water',' Something You Can Shoot','A Gun'],
-
-['Skeet','A Target','A Gun','Skeet','A Target','Skeet',' Things In A Basement','The Furnace'],
-
-['Cement Floor','Stored Wine','The Furnace','Cement Floor','Stored Wine','Cement Floor',' Things That Can Bend','An Elbow'],
-
-['A Country Road','A Gymnast','An Elbow','A Country Road','A Gymnast','A Country Road',' Things That Are Waxed','Linoleum Floor'],
-
-['Dirty Cars','A Mustache','Linoleum Floor','Dirty Cars','A Mustache','Dirty Cars',' Things That Are Kicked','Soccer Balls'],
-
-['The "Bucket"','Bad Habits','Soccer Balls','The "Bucket"','Bad Habits','The "Bucket"',' What Is_Said By_A Cashier','I Take Your Money'],
-
-['I Give Out Receipts','I Have A Register','I Take Your Money','I Give Out Receipts','I Have A Register','I Give Out Receipts',' Things That Are Spanish','Madrid'],
-
-['Sangria','A Matador','Madrid','Sangria','A Matador','Sangria',' Some Things With Flowers','A Banquet'],
-
-['A Garden','Centerpieces','A Banquet','A Garden','Centerpieces','A Garden',' Things That Are Shoveled','A Ditch'],
-
-['Snow','Coal','A Ditch','Snow','Coal','Snow',' Things That Are Lowered','The "Boom"'],
-
-['Sale Prices','Stereo Volume','The "Boom"','Sale Prices','Stereo Volume','Sale Prices',' Things Found In Washington','White House'],
-
-['Capital Building','Smithsonian','White House','Capital Building','Smithsonian','Capital Building',' Things In A Taxi','The Driver'],
-
-['The Meter','Passengers','A Radio','The Driver','The Meter','Passengers',' Things In A Stadium','Bleachers'],
-
-['Sections','Playing Field','The Press Box','Sections','Playing Field','Bleachers',' Things At A Depot','Trains'],
-
-['The Platform','Ticket Window','Trains','The Platform','Ticket Window','The Platform',' Things You Can Clip','Coupons'],
-
-['Fingernails','Poodle','*s Hair','Coupons','Fingernails','Poodle','*s Hair','Fingernails'],
-
-[' Parts Of A Camera','The Lens','The Film','The Shutter','The Lens','The Film','The Shutter','The Film'],
-
-[' Things On Your Head','A Hat','A Toupee','A Visor','A Hat','A Toupee','A Visor','A Toupee'],
-
-[' Things On A Cruise','Passengers','The Deck','Shuffleboard','Passengers','The Deck','Shuffleboard','The Deck'],
-
-[' Things With A Mirror','Compact','Drug Cabinet','Dressing Room','Compact','Drug Cabinet','Dressing Room','Drug Cabinet'],
-
-[' Things That Are Wild','Jungle Animals','Deuces','Punk Hair','Jungle Animals','Deuces','Punk Hair','Deuces'],
-
-[' Some Things That Sag','Old Breasts','Big Panty Hose','Tired Eyes','Old Breasts','Big Panty Hose','Tired Eyes','Big Panty Hose'],
-
-[' Things That Are Cold','Alaska','A Refrigerator','Siberia','Iced Tea','Ice Cubes','A Refrigerator','Siberia'],
-
-[' Things In A Museum','The Curator','Paintings','Bones','Statues','The Curator','Paintings','Bones'],
-
-[' These Jobs Are Dangerous','Stuntman','Construction Work','Window Washer','Stuntman','Construction Work','Window Washer','Construction Work'],
-
-[' Things That Can Crumble','Stale Cookies','Ruins','Old Bread','Stale Cookies','Ruins','Old Bread','Ruins'],
-
-[' Some Kinds Of Puzzles','Jig Saw','Crossword','Rubiks Cube','Jig Saw','Crossword','Rubiks Cube','Jig Saw'],
-
-[' Things In A Barn','Cows','Hayloft','Chickens','A Pitchfork','A Tractor','Hay','A Goat'],
-
-[' Things Taken On_A Vacation','Luggage','Passport','Postcards','Swimsuit','Money','Luggage','Passport'],
-
-[' Things That Can Curl','Hair','A Pigs Tail','Ribbons','Hair','A Pigs Tail','Ribbons','Toes'],
-
-[' Things That Have_A Net','A Tennis Court','Basketball Hoop','A Trapeze','Fish Catcher','Basketball Hoop','A Trapeze','Fish Catcher'],
-
-[' Why You Go_To Jail','For Robbery','For Murder','For Arson','For Rape','Breaking The Law','For Murder','For Arson'],
-
-[' Some Men Named Tom','Selleck','Brokaw','Snyder','Sawyer','Snyder','Selleck','Sawyer'],
-
-[' Things That You Love','Your Child','Your Wife','Your Car','Your Parents','Your Dog','Your Brother','Chocolate'],
-
-[' Things That You Pick','Winning Horse','Flowers','Your Nose','Fruit','Scabs','Flowers','Grapes'],
-
-[' Things That Are_On Top','The cherry','Your head','The peak','The Summit','The North Pole','Your Hat','Your Head'],
-
-[' These Things Are Fruits','Apples','Cherries','Oranges','Pears','Plums','Banannas','Grapes'],
-
-[' What Is_Said By_A Boss','Your Hired','Your fired','Get To Work','No Raise','Hurry Up','Your Fired','Get To Work'],
-
-[' Things In A Playground','A Swingset','Children','A Sandbox','A Jungle Gym','Grass','A Track','A Soccer Field'],
-
-[' Things In A Cave','Stalagmites','A Bear','Bats','Water','Moss','Rocks','Stalagtites'],
-
-[' Things Made Of Wool','A Sweater','A Scarf','Mittens','A Coat','Sheep Fur','A Hat','A Cloak'],
-
-[' Things With A Spout','A Teapot','A Watering Can','A Whale','A Kettle','A Faucet','A Porpoise','A Dolphin'],
-
-[' These Things Are Exercises','Pushups','Situps','Aerobics','Running','Swimming','Rowing','Jogging'],
-
-[' These Things Are Mexican','Tijuana','Tortillas','Jalapenos','Green Chile','Tequilla','Alcapulco','Sombreros'],
-
-[' Things That Are Spread','Butter','Wealth','A Blanket','Jam','Peanut Butter','A Blanket','Jelly'],
-
-[' Things On A Wall','Paintings','Paint','Paneling','Portraits','A Clock','A Light Switch','Paint'],
-
-[' Things In A Pot','Stew','Spaghetti','Cannibals Meal','Meat','Vegetables','Chicken','Spaghetti'],
-
-[' Parts Of A Book','The Cover','The Pages','The Binding','The Title','The Index','The Appendix','The Pages'],
-
-[' Things In An Ambulance','The driver','Oxygen Tank','Stretcher','Drugs','Patient','Bandages','Siren'],
-
-[' Things Around A Pool','Lifeguard','Chlorine','Towels','Bathers','LifeBuoy','Rope','Lockers'],
-
-[' Things That You Study','A Lesson','Homework','A Picture','Information','The Stock Market','Your Taxes','Homework'],
-
-[' Things That Can Warn','A Red Light','A Siren','A Snake Rattle','A Cat','*s Hiss','The News','A Preacher'],
-
-['A Politician',' These Are Garden Tools','A Rake','A Hoe','A Spade','A Shovel','Hedge Clippers','A Hoe'],
-
-['A Shovel',' Names Of Movie Directors','Alfred Hitchcock','Steven Spielberg','Francis Coppola','Alfred Hitchcock','Steven Spielberg','Francis Coppola'],
-
-['Steven Spielberg',' Things Used By_An Artist','Canvas','Palette','Brushes','Paint','Model','Shadow'],
-
-['Perspective',' Things In A Factory','Assembly Line','Workers','Lunch Whistle','Machines','Parts','Workers'],
-
-['A Foreman',' People You Might Tip','A Good Waiter','A Porter','A Cab Driver','A Maid','A Waiter','A Baggage Clerk'],
-
-['A Porter',' Things That Can Expand','Your Lungs','A Balloon','A Rubber Band','A Waistline','Awareness','Your Lungs'],
-
-['A Balloon',' Things In A Casino','Crap Tables','Dice','Gamblers','Cards','Slot Machines','Money'],
-
-['Chips',' Things That Can Blow','The Wind','A Bellows','A Storm','A Tuba Player','Trumpet Player','A Boiler'],
-
-['A Fan',' Animals That Are Cats','A Lion','A Leopard','A Siamese','A Lynx','A Manx','A Tiger'],
-
-['A Tom',' Some Things That Obey','Your Dog','A Behaved Child','A Soldier','A Robot','A Servant','A Lackey'],
-
-['A Soldier',' Things Used By_The Pioneers','Wagons','Butter Churn','An Axe','A Gun','An Ox','Land'],
-
-['Ale',' Things You Can Brush','Your Teeth','Your Hair','A Horse','A Cat','Your Coat','Your Hair'],
-
-['A Horse',' Parts Of A Castle','A Drawbridge','A Moat','A Tower','A Dungeon','Stone Walls','Windows'],
-
-['The Armory',' Things Made Of Gold','Wedding Rings','Bracelets','A Crown','Coins','Bars','Rings'],
-
-['Necklaces',' Things That You Memorize','A Script','Formulas','Phone Numbers','Addresses','Faces','Names'],
-
-['Birthdates',' Things That Are Pinned','A Diaper','A Torn Garment','A Wrestler','A Nametag','A Diaper','A Rip'],
-
-['A Wrestler']]
+[[{
+  'title': 'Pain Reaction',
+  'description': 'Things That Hurt',
+  'items': ['A Cut', 'A Splinter', 'A Burn', 'A Spanking', 'A Sting', 'A Migraine']
+}, {
+  'title': 'Queue Up',
+  'description': 'Places Where You Wait',
+  'items': ['Disneyland', 'A Disco', 'A Bakery', 'A Museum', 'An Airport', 'A Market']
+}, {
+  'title': 'Feet First',
+  'description': 'Things People Step On',
+  'items': ['A Ladder', 'The Brakes', 'An Ant', 'The Mound', 'The Gas', 'A Mat']
+}, {
+  'title': 'Fuzzy Wuzzy',
+  'description': 'Thing Associated With A Bear',
+  'items': ['A Skin', 'A Hug', 'Goldilocks', 'Brown', 'A Teddy', 'A Cub']
+}, {
+  'title': 'Get Through It ',
+  'description': 'Things That Other Things Go Through',
+  'items': ['A Needle', 'A Gate', 'A Hole', 'A Straw', 'A Filter', 'A Tunnel']
+}, {
+  'title': 'A Word From Y\'S',
+  'description': 'Words That End With The Letter Y',
+  'items': ['Happy', 'Cry', 'Hungry', 'A Pony', 'Spray', 'Ivy']
+}], [{
+  'title': 'Mat Man ',
+  'description': 'Things Associated With Wrestling',
+  'items': ['A Referee', 'The Ropes', 'A Trainer', 'An Arena', 'A Champion', 'An Exibition']
+}, {
+  'title': 'Like Sardines',
+  'description': 'Things Packed Or In A Pack',
+  'items': ['Gum', 'Suitcase', 'Trash', 'The Bleachers', 'Meat', 'A Can']
+}, {
+  'title': 'Ware Its Soft',
+  'description': 'Box Office Software And Things',
+  'items': ['Alf', 'A Program', 'Computer', 'Office', 'Alien', 'Minnesota']
+}, {
+  'title': 'At Ease ',
+  'description': 'Things You Sit On',
+  'items': ['A Fence', 'A Tuffet', 'A Lap', 'A Stool', 'Roller Coaster', 'Rickshaw']
+}, {
+  'title': 'It\'S Good For You ',
+  'description': 'Things Associated With Nutrition',
+  'items': ['Fats', 'Balanced', 'A Complexion', 'Calcium', 'Energy', 'Minerals']
+}, {
+  'title': 'One For The Gripper',
+  'description': 'Things That Have Claws',
+  'items': ['A Chair', 'An Owl', 'A Hammer', 'An Eagle', 'A Lobster', 'A Grizzly']
+}], [{
+  'title': 'Puff The Magic Dragon',
+  'description': 'Things Associated With Powder',
+  'items': ['Dry', 'Blush', 'Talcum', 'Brush', 'Loose', 'Soothing']
+}, {
+  'title': 'To Close For Comfort',
+  'description': 'Things That Are Uncomfortable ',
+  'items': ['A Wig', 'A Thorn', 'A Bench', 'Armor', 'The Measles', 'A Cot']
+}, {
+  'title': 'Lilies Of The Field',
+  'description': 'Places Where Flowers Are Found',
+  'items': ['A Prom', 'A Lei', 'A Nursery', 'A Florist', 'A Table', 'A Bush']
+}, {
+  'title': 'Be Efficient',
+  'description': 'Things That Save Time',
+  'items': ['A Jet', 'Brunch', 'A Microwave', 'A Vacuum', 'A Maid', 'A Telegram']
+}, {
+  'title': 'It Happened Suddenly',
+  'description': 'Things That Strike ',
+  'items': ['A Whip', 'A Snake', 'Dracula', 'An Ax', 'A Union', 'A Mugger']
+}, {
+  'title': 'A Huff And Puff',
+  'description': 'Things Affected By The Wind',
+  'items': ['A Kite', 'The Tide', 'Smog', 'Turbulence', 'Clouds', 'Flag']
+}], [{
+  'title': 'Who Are You Really?',
+  'description': 'Characters At A Masquerade',
+  'items': ['Snoopy', 'Annie', 'Cupid', 'A Donkey', 'A Gangster', 'A Wolf']
+}, {
+  'title': 'Grab The Brass Ring ',
+  'description': 'Merry-Go-Round Things',
+  'items': ['A Strap', 'Up', 'Music', 'A Pole', 'Stirrups', 'Children']
+}, {
+  'title': 'It\'s Safe With Me ',
+  'description': 'Things That Protect',
+  'items': ['A Napkin', 'A Vault', 'An Apron', 'Dog', 'Helmet', 'Bumper']
+}, {
+  'title': 'The Long And Short ',
+  'description': 'Things Measured In Inches',
+  'items': ['An Infant', 'A Blanket', 'Sofa', 'Tire', 'Paper', 'Pants']
+}, {
+  'title': 'The Older The Better',
+  'description': 'Things That Are Dated',
+  'items': ['A Stamp', 'Milk', 'An Anniversary', 'An Envelope', 'A Memo', 'A Visa']
+}, {
+  'title': 'Out With The Tide',
+  'description': 'Things That Flow',
+  'items': ['Ink', 'Vodka', 'Air', 'A Skirt', 'Electricity', 'The Mississippi']
+}], [{
+  'title': 'Encore Encore ',
+  'description': 'Things Associated With An Audience',
+  'items': ['A Cough', 'Applause', 'An Aisle', 'An Ovation', 'A Stadium', 'An Exit']
+}, {
+  'title': 'Like Dorthys Heels',
+  'description': 'Things That Click',
+  'items': ['Scissors', 'A Knob', 'A Clock', 'A Bomb', 'A Switch', 'A Revolver']
+}, {
+  'title': 'Dance The Night Away',
+  'description': 'Things At A Disco',
+  'items': ['Lights', 'Music', 'A Waiter', 'A Bachelor', 'Speakers', 'Drinks']
+}, {
+  'title': 'The Tv Bible ',
+  'description': 'Things In A Tv Guide',
+  'items': ['Screen', 'A Puzzle', 'A Network', 'Dallas', 'Cable', 'A Repeat']
+}, {
+  'title': 'Come On Up',
+  'description': 'Things That Come Out Of The Ground',
+  'items': ['Lava', 'A Root', 'A Carrot', 'A Worm', 'Coal', 'A Geyser']
+}, {
+  'title': 'The Trolley Song',
+  'description': 'Things Associated With A Bell',
+  'items': ['Santa Claus', 'A Kitten', 'A Round', 'A Ship', 'A Bicycle', 'A Locomotive']
+}], [{
+  'title': 'Blind Faith',
+  'description': 'Things People Belive In',
+  'items': ['A Dream', 'A Diet', 'Republicans', 'Religion', 'Peace', 'Voodoo']
+}, {
+  'title': 'All Talk No Action ',
+  'description': 'Things Associated With A Speech',
+  'items': ['An Audience', 'An Award', 'Long', 'Writer', 'A Sermon', 'Dull']
+}, {
+  'title': 'Say Can You See',
+  'description': 'Words That End With E-E',
+  'items': ['A Bee', 'A Toupee', 'Three', 'A Tee', 'Free', 'A Teepee']
+}, {
+  'title': 'Not Tonight Honey',
+  'description': 'Things That Are Sweet ',
+  'items': ['A Melon', 'Cocoa', 'Saccharin', 'Cola', 'A Coconut', 'Marmalade']
+}, {
+  'title': 'For The Gipper ',
+  'description': 'Things At A Football Game',
+  'items': ['A Coach', 'Catch', 'A Bench', 'Tackle', 'A Fumble', 'A Cheerleader']
+}, {
+  'title': 'Don\'t Fence Me In',
+  'description': 'Things Associated With A Sword',
+  'items': ['A Blade', 'A Musketeer', 'A Point', 'Wave', 'Sharp', 'Armor']
+}], [{
+  'title': 'On Edge ',
+  'description': 'Things Associated With Stress',
+  'items': ['Spouse', 'An Exam', 'Bills', 'Caffeine', 'A Migraine', 'A Job']
+}, {
+  'title': 'A Holding Pattern',
+  'description': 'Things That Have A Handle',
+  'items': ['A Mower', 'A Safe', 'A Crutch', 'A Freeze', 'A Basket', 'A Pistol']
+}, {
+  'title': 'Son Of A Gun',
+  'description': 'People Whos Last Names End In SON',
+  'items': ['Michael Jackson', 'Ted Danson', 'Tom Jefferson', 'Thomas Edison', 'Richard Dawson', 'Willie Nelson']
+}, {
+  'title': 'What\'s Your Sinus',
+  'description': 'Things Associated With A Cold ',
+  'items': ['An Asprin', 'Juice', 'Gargle', 'A Handkerchief', 'Sneeze', 'Laryngitis']
+}, {
+  'title': 'On Broadway',
+  'description': 'Things Associated With The Theater',
+  'items': ['New York', 'A Ticket', 'An Audition', 'An Intermission', 'A Critic', 'A Mezzanine']
+}, {
+  'title': 'Hold The Pickle',
+  'description': 'Things Associated With A Hamburger',
+  'items': ['A Barbecue', 'A Bun', 'Cheddar', 'Relish', 'Rare', 'Ground']
+}], [{
+  'title': 'Your Foot Into It',
+  'description': 'Things That Have A Kick',
+  'items': ['A Mule', 'The Rockettes', 'A Cannon', 'Tequila', 'Fred Astaire', 'A Bronco']
+}, {
+  'title': 'Uncle Sam Has Me',
+  'description': 'People Who Work For The Government',
+  'items': ['A Jury', 'A Mayor', 'Customs', 'A Ranger', 'The President', 'Irs']
+}, {
+  'title': '110 In The Shade ',
+  'description': 'Things That Have Degrees',
+  'items': ['A Compass', 'A Thermometer', 'A Globe', 'A Surgeon', 'A Circle', 'A Murder']
+}, {
+  'title': 'The Shape Of Things',
+  'description': 'Special Bodied Things',
+  'items': ['A Mermaid', 'An Octopus', 'A Violin', 'A Blimp', 'A Buddha', 'An Ostrich']
+}, {
+  'title': 'By Invitation Only ',
+  'description': 'These Are Parties ',
+  'items': ['Christmas', 'Halloween', 'Pajama', 'Fraternity', 'Engagement', 'Bon Voyage']
+}, {
+  'title': 'The Untouchables ',
+  'description': 'Things In A Gangster Movie',
+  'items': ['A Prison', 'A Bullet', 'A Trial', 'Frisk', 'A Convict', 'Parole']
+}], [{
+  'title': 'Its Open Season',
+  'description': 'Things Associated With Hunting ',
+  'items': ['A Rifle', 'A Telescope', 'A Deer', 'A Safari', 'A Treasure', 'A Spear']
+}, {
+  'title': 'At Your Service',
+  'description': 'Things At A Gas Station',
+  'items': ['Empty', 'A Gallon', 'A Battery', 'The Hood', 'A Spare', 'Charge']
+}, {
+  'title': 'Swan Leak',
+  'description': 'Things That Drip',
+  'items': ['A Peach', 'A Sponge', 'A Brush', 'A Nozzle', 'Laundry', 'A Percolator']
+}, {
+  'title': 'Made To Order',
+  'description': 'Things Associated With A Perscription',
+  'items': ['Expensive', 'A Date', 'A Pharmacy', 'A Warning', 'A Dose', 'A Signature']
+}, {
+  'title': 'Be A Clown',
+  'description': 'Funny Things',
+  'items': ['A Face', 'Charlie Brown', 'A Tickle', 'A Mistake', 'A Comedy', 'Woody Allen']
+}, {
+  'title': 'Silent Parters',
+  'description': 'People Who Stay In The Background',
+  'items': ['Tonto', 'A Chef', 'A Caddy', 'Dr Watson', 'CIA', 'An Announcer']
+}], [{
+  'title': 'Royal And True',
+  'description': 'Things That Can Be Purple',
+  'items': ['A Vein', 'Make-Up', 'Hickey', 'Dye', 'A Violet', 'A Beet']
+}, {
+  'title': 'The Front Page',
+  'description': 'People Who Make The Headlines',
+  'items': ['Fidel Castro', 'Nancy Reagan', 'Frank Sinatra', 'Margret Thatcher', 'Warren Beatty', 'Betty Ford']
+}, {
+  'title': 'One Months Notice',
+  'description': 'Things Associated With A Landlord',
+  'items': ['A Tenant', 'A Deposit', 'A Manager', 'A Leak', 'Vacant', 'Renovate']
+}, {
+  'title': 'Junk For Joy',
+  'description': 'Things That Kids Collect',
+  'items': ['Records', 'Cookies', 'Autographs', 'Shells', 'Buttons', 'Rocks']
+}, {
+  'title': 'All Tuned Up',
+  'description': 'Things Used By A Musician',
+  'items': ['A Baton', 'A Case', 'A Metronome', 'Cymbals', 'Lyrics', 'An Arrangement']
+}, {
+  'title': 'Those Damn Yankees',
+  'description': 'Things In New England',
+  'items': ['Syrup', 'Harvard', 'Paul Revere', 'The Cape', 'The Kennedys', 'The Pops']
+}], [{
+  'title': 'Fit As A Fiddle',
+  'description': 'Things Associated With Health',
+  'items': ['A Prescription', 'A Chiropractor', 'Arizona', 'Calisthenics', 'St Elsewhere', 'An Optometrist']
+}, {
+  'title': 'The Garment Center',
+  'description': 'Things You Find On Clothes',
+  'items': ['A Sleave', 'A Collar', 'Lint', 'A Cuff', 'A Tag', 'A Spot']
+}, {
+  'title': 'Make Mine Melba',
+  'description': 'Things Associated With Peaches',
+  'items': ['A Pit', 'Sweet', 'A Tree', 'Summer', 'A Can', 'Fuzz']
+}, {
+  'title': 'What Big Teeth',
+  'description': 'Things Associated With A Smile',
+  'items': ['A Picture', 'A Dimple', 'A Stewardess', 'A Joke', 'A Model', 'Mona Lisa']
+}, {
+  'title': 'Truce Or False',
+  'description': 'Things Associated With Peace',
+  'items': ['Sleep', 'An Angel', 'A Dove', 'Talks', 'Treaty', 'A Convent']
+}, {
+  'title': 'Lend Me Your Ears',
+  'description': 'Things That Are Loud',
+  'items': ['A Disco', 'A Siren', 'The Surf', 'An Engine', 'A Hyena', 'The Concord']
+}], [{
+  'title': 'Starting Monday',
+  'description': 'Words Starting With MON',
+  'items': ['A Month', 'A Monologue', 'A Monk', 'A Monocle', 'A Monotone', 'A Monument']
+}, {
+  'title': 'Puttin On The Ritz',
+  'description': 'Things Associated With A Cracker',
+  'items': ['Jelly', 'Polly', 'A Dip', 'Crisp', 'A Snack', 'A Spread']
+}, {
+  'title': 'Get Up And Go',
+  'description': 'Things Associated With Running',
+  'items': ['Perspire', 'Stretch', 'A Fad', 'Oxygen', 'A Cramp', 'A Marathon']
+}, {
+  'title': 'Tan Your Hide',
+  'description': 'Things That Can Be Brown',
+  'items': ['A Mink', 'Gravy', 'Leather', 'A Bear', 'Wheat', 'A Carmel']
+}, {
+  'title': 'No No Nanette',
+  'description': 'Words That Begin With The Letters NO',
+  'items': ['Novocain', 'A Nod', 'Noise', 'A Nomination', 'A Noodle', 'Norway']
+}, {
+  'title': 'It\'s In Vogue',
+  'description': 'Things You Read About In Womans Magazines',
+  'items': ['An Operation', 'A Decorator', 'A Wardrobe', 'A Trip', 'Health', 'An Investment']
+}], [{
+  'title': 'Nobodys Perfect',
+  'description': 'Things Associated With A Loser',
+  'items': ['Seven', 'Alimony', 'Sad', 'A Lemon', 'A Summons', 'A Fine']
+}, {
+  'title': 'Your Porch',
+  'description': 'Things Outside A Building',
+  'items': ['An Ambulance', 'A Garage', 'A Sign', 'A Pigeon', 'A Fountain', 'An Antenna']
+}, {
+  'title': 'Don\'t Call Us',
+  'description': 'Things Associated With An Answering Machine',
+  'items': ['On', 'Knob', 'Cassette', 'Voice', 'Message', 'Plug']
+}, {
+  'title': 'Par For The Course',
+  'description': 'Words That Begin With PAR',
+  'items': ['Parents', 'Parachute', 'Partner', 'Parsol', 'Parka', 'Parmesan']
+}, {
+  'title': 'Sick Leave',
+  'description': 'Things In A Hospital',
+  'items': ['Stethoscope', 'Floor', 'Intern', 'Transfusion', 'Laboratory', 'Doctor']
+}, {
+  'title': 'Flip Flop',
+  'description': 'Things That Are Turned Over',
+  'items': ['Ace', 'Page', 'Omlette', 'Canoe', 'Pancakes', 'Steak']
+}], [{
+  'title': 'The Collar Purple',
+  'description': 'Things Put On An Animal',
+  'items': ['Sweater', 'License', 'Muzzle', 'Bell', 'Brand', 'The Reins']
+}, {
+  'title': 'Day By Day',
+  'description': 'Things Associated With A Year',
+  'items': ['Anniversary', 'Resolution', 'A Week', 'Leap', 'Almanac', 'Chablis']
+}, {
+  'title': 'Material Girl',
+  'description': 'Thing Associated With A Dress',
+  'items': ['Mini', 'Seam', 'Gown', 'Mannequin', 'Boutique', 'Cling']
+}, {
+  'title': 'Play It Again Sam',
+  'description': 'Things Associated With A Record',
+  'items': ['Jukebox', 'A Song', 'A Label', 'Grooves', 'Spin', 'A Band']
+}, {
+  'title': 'To Air Is Human',
+  'description': 'Things In The Air',
+  'items': ['Kite', 'Jet', 'Spring', 'Eagle', 'Pollen', 'Moisture']
+}, {
+  'title': 'Meet My Ex',
+  'description': 'Words That Begin With EX',
+  'items': ['Exit', 'Expensive', 'Excellent', 'Extinguish', 'Excuse', 'Executive']
+}], [{
+  'title': 'Oh Oh',
+  'description': 'Words That Contain A Double O',
+  'items': ['Baboon', 'Groove', 'A Tool', 'A Papouse', 'A Troop', 'A Typhoon']
+}, {
+  'title': 'Around The Edges',
+  'description': 'Things That Have A Rim',
+  'items': ['A Shield', 'A Hoop', 'A Barrel', 'A Crater', 'A Tambourine', 'A Platter']
+}, {
+  'title': 'Societys Rules',
+  'description': 'Things Associated With The Law',
+  'items': ['A Badge', 'A Posse', 'A Veto', 'Cagney And Lacy', 'Obey', 'Parlaiment']
+}, {
+  'title': 'Cloud Nine',
+  'description': 'Things Associated With A Storm',
+  'items': ['A Flood', 'Traffic', 'Mud', 'A Hurricane', 'A Forecast', 'A Blizzard']
+}, {
+  'title': 'On Thin Ice',
+  'description': 'Things Associated With Ice Hockey',
+  'items': ['A Puck', 'Canada', 'A Goalie', 'A Brawl', 'A Team', 'A Penalty']
+}, {
+  'title': 'Starting From Scratch',
+  'description': 'Things That Can Make You Itch',
+  'items': ['A Bite', 'Grass', 'A Flea', 'A Rash', 'Wool', 'Heat']
+}], [{
+  'title': 'Up In Smoke',
+  'description': 'Things Associated With Tobacco',
+  'items': ['"Chew"', 'An Auction', 'A Pouch', 'A Scent', 'Virginia', 'A Plant']
+}, {
+  'title': 'Between The Lines',
+  'description': 'Things That People Read',
+  'items': ['Encyclopedia', 'A Horoscope', 'An Ad', 'A Contract', 'A Manual', 'An Agenda']
+}, {
+  'title': 'Puck The Magic Dragon',
+  'description': 'Things Associated With Ice Hockey',
+  'items': ['A Helmet', 'A Team', 'A Fight', 'A Stick', 'A Goal', 'A Penalty']
+}, {
+  'title': 'Meals R Us',
+  'description': 'Things Associated With A Caterer',
+  'items': ['Flowers', 'A Buffet', 'A Cart', 'A Reception', 'Meatballs', 'A Banquet']
+}, {
+  'title': 'Starting From Scratch',
+  'description': 'Things That Can Make You Itch',
+  'items': ['A Beard', 'A Flea', 'Perspiration', 'The Measles', 'Wool', 'An Allergy']
+}, {
+  'title': 'She\'s So Shallow',
+  'description': 'Words That Begin With The Letters "S-H"',
+  'items': ['A Shawl', 'A Shape', '"Shred"', 'A Shaft', 'A Shrew', 'A Shriek']
+}], [{
+  'title': 'Clean Up Your Act',
+  'description': 'Things Associated With Soap',
+  'items': ['Laundry', 'A Sponge', 'Detergent', '"Slippery"', 'Lather', '"Scrub"']
+}, {
+  'title': 'L.A Claw',
+  'description': 'Things That Have Claws',
+  'items': ['An Owl', 'A Bear', 'An Eagle', 'A Tiger', 'A Crab', 'A Vulture']
+}, {
+  'title': 'Say Cheese',
+  'description': 'Things That Are Photographed',
+  'items': ['A Graduation', 'A View', 'A Candidate', 'A Tournament', 'Tom Cruise', 'A Defendant']
+}, {
+  'title': 'Heavy Metal',
+  'description': 'Things Associated With Gold',
+  'items': ['A Karat', 'An Anniversary', '"Midas"', '"Solid"', 'A Chain', 'Bullion']
+}, {
+  'title': 'Little Giants',
+  'description': 'Small Things With Big Names',
+  'items': ['An Intermission', 'A Transistor', 'A Chihuahua', 'An Hors D\'Oeuvre', 'A Leprechaun', 'An Abbreviation']
+}, {
+  'title': 'What\'s Out There',
+  'description': 'Things That Are Inside Other Things',
+  'items': ['A Pea', 'A Splinter', 'Stuffing', 'A "Genie"', 'An Oyster', 'Jonah']
+}], [{
+  'title': 'You\'re Getting Warmer',
+  'description': 'Things That Are Hot',
+  'items': ['Mustard', 'Mexico', 'Pepperoni', 'A Barbeque', 'A Tamale', 'The Tropics']
+}, {
+  'title': 'Did You See That?',
+  'description': 'Things That Streak Or Are Streaked',
+  'items': ['Mascara', 'A Shark', 'The "Concorde"', 'A "Pane"', 'A Meteor', 'A Torpedo']
+}, {
+  'title': 'We Got It Maid',
+  'description': 'Things Associated With Dirt',
+  'items': ['Pollution', 'A "Roach"', 'Mud', 'A Stain', 'Litter', '"Grime"']
+}, {
+  'title': 'Causing A Stir',
+  'description': 'Things That Are Provocative',
+  'items': ['Perfume', 'A Temper', 'Politics', 'A Tease', 'A Threat', 'Loni Anderson']
+}, {
+  'title': 'On The Right Track',
+  'description': 'Things Associated With A Zipper',
+  'items': ['A Tailor', 'A Dress', 'A Pocket', 'Metal', 'A Lining', 'A Jacket']
+}, {
+  'title': 'That\'s A Wrap',
+  'description': 'Words You Hear On A Movie Set',
+  'items': ['"Make-up"', 'The "Script"', 'A "Costume"', '"Action"', 'A "Location"', 'The "Budget"']
+}], [{
+  'title': 'Ebony And Ivory',
+  'description': 'Things Associated With A Piano',
+  'items': ['"Chopsticks"', 'A "Grand"', 'A Composer', 'Lessons', 'Billy Joel', 'A Recital']
+}, {
+  'title': 'Press Your Luck',
+  'description': 'Things That Are Printed',
+  'items': ['A Coupon', 'A Passport', 'A Headline', 'A Ballot', 'An Application', '"Counterfeit"']
+}, {
+  'title': 'Neck Nolte',
+  'description': 'Things That Have A Neck',
+  'items': ['A Turtle', 'A Vase', 'A Banjo', 'A Swan', 'The Mississippi', 'A Puppet']
+}, {
+  'title': 'Size It Up',
+  'description': 'Things That Measure Other Things',
+  'items': ['A Compass', 'An Architect', 'A "Rating"', 'A Seismograph', 'A Census', 'A Gauge']
+}, {
+  'title': 'Boa And Arrow',
+  'description': 'Things Associated With A Snake',
+  'items': ['A "Rattle"', 'A "Charmer"', 'Fangs', '"Shed"', 'An Antidote', '"Slither"']
+}, {
+  'title': 'Three On A Match',
+  'description': 'Things That Strike',
+  'items': ['A Clock', 'A Punch', 'A Burglar', 'A Hurricane', 'A Cobra', 'A Prospector']
+}], [{
+  'title': 'A Delicate Balance',
+  'description': 'Things That Are Fragile',
+  'items': ['An Egg', 'A Bubble', 'Lace', 'Meringue', 'An Ego', 'A Souffle']
+}, {
+  'title': 'The Sweat Box',
+  'description': 'Things You See At A Health Spa',
+  'items': ['A Massage', 'A Diet', 'Aerobics', 'Dumbells', 'A Bicycle', 'A Whirlpool']
+}, {
+  'title': 'Up Up And Away',
+  'description': 'Things That Get Rid Of Things',
+  'items': ['Tweezers', 'A Rake', 'An Exterminator', 'A Mower', 'A Sewer', 'Turpentine']
+}, {
+  'title': 'Puff The Magic Dragon',
+  'description': 'Things Associated With Powder',
+  'items': ['A Shower', 'Cosmetics', 'Talcum', 'Loose', 'A Compact', 'Soothing']
+}, {
+  'title': 'The X-Factor',
+  'description': 'Words That End With The Letter X',
+  'items': ['A Jukebox', 'Flex', 'Wax', 'An Appendix', 'An Ox', 'An Index']
+}, {
+  'title': '110 In The Shade',
+  'description': 'Things That Have Degrees',
+  'items': ['A Diploma', 'A Turn', 'A Surgeon', 'A Murder', 'A Valedictorian', 'A Barometer']
+}], [{
+  'title': 'Feet First',
+  'description': 'Things People Step On Or Walk On',
+  'items': ['A Mat', 'A Crack', 'The Mound', 'Linoleum', 'A Platform', 'A Treadmill']
+}, {
+  'title': 'The Sushi Bar',
+  'description': 'Things In A Japanese Restaurant',
+  'items': ['A Cushion', 'A Cleaver', 'A Hibachi', 'A Kimono', 'Soy', 'A Lantern']
+}, {
+  'title': 'Which Switch?',
+  'description': 'Things People Turn Off',
+  'items': ['A Hydrant', 'A Fan', 'An Ignition', 'A Machine', 'A Thermostat', 'A Projector']
+}, {
+  'title': 'They\'re Unreal',
+  'description': 'Fairy Tale Characters',
+  'items': ['Bambi', 'Hansel & Gretel', 'Peter Pan', 'Rapunzel', 'Grumpy', 'Rumplestiltskin']
+}, {
+  'title': 'All Coiled Up',
+  'description': 'Things That Have Or Are Made Of Wire',
+  'items': ['A Hanger', 'A Lamp', 'A Staple', 'A Fence', 'A Stereo', 'A Spring']
+}, {
+  'title': 'Pee-Wee\'s Playhouse',
+  'description': 'Things That Make Kids Laugh',
+  'items': ['A Monkey', 'Kermit', 'A Tickle', 'The Flintstones', 'A Game', 'The Smurfs']
+}], [{
+  'title': 'Counting The Minutes',
+  'description': 'Things That Are Slow',
+  'items': ['A Walk', 'Traffic', 'Molasses', 'A Snail', 'A Speech', 'A Reflex']
+}, {
+  'title': 'Pop! Pop! Pop!',
+  'description': 'Things That Bubble Or Have Bubbles',
+  'items': ['A Bath', 'A Percolator', 'A Fountain', 'A Brook', 'Tar', 'Seltzer']
+}, {
+  'title': 'It Made Its Marx',
+  'description': 'Things Made In Russia',
+  'items': ['Dressing', 'Moscow', 'Borscht', 'Siberia', 'The Kremlin', 'A Sable']
+}, {
+  'title': 'I\'ll Be Good Mommy!',
+  'description': 'Things Kids Do To Get In Trouble',
+  'items': ['Hitchhike', 'Play Hooky', 'Forget', 'Tattle', 'Curse', 'Tease']
+}, {
+  'title': 'Pack It In',
+  'description': 'Things You Take On Vacation',
+  'items': ['A Map', 'A Racquet', 'Jeans', 'A Novel', 'A Passport', 'A Walkman']
+}, {
+  'title': 'Face The Music ',
+  'description': 'Things That Have Bars',
+  'items': ['A Crib', 'A Bank', 'A Song', 'A Gym', 'A Penitentiary', 'A Lieutenant']
+}], [{
+  'title': 'The Good Die Young',
+  'description': 'People Who Came To An Untimely End',
+  'items': ['Abraham Lincoln', 'Mr Hyde', 'Joan of Arc', 'Judy Garland', 'Socrates', 'Mussolini']
+}, {
+  'title': 'Numbers Italian Style',
+  'description': 'Things With Roman Numerals',
+  'items': ['A Lease', 'A Diploma', 'A Chapter', 'The Super Bowl', 'Henry the VIII', 'A Sequel']
+}]]
