@@ -11,23 +11,32 @@ export default class Home extends React.Component {
     mode: AppStore.mode
   }
 
-  handleGameStatus = () => {
+  setMode = () => {
     this.setState({
       mode: AppStore.mode
     })
   }
 
   componentWillMount() {
-    AppStore.addListener('newTimer', this.handleGameStatus);
-    AppStore.addListener('clearTimer', this.handleGameStatus);
+    AppStore.addListener('newGame', this.setMode)
+    AppStore.addListener('newTimer', this.setMode)
+    AppStore.addListener('cancelTimer', this.setMode)
+    AppStore.addListener('timesUp', this.setMode)
+    AppStore.addListener('win', () => {
+      if (this.state.mode !== 'winnersCircle') {
+        this.setMode()
+      }
+    })
   }
 
   render() {
     return (
       <div className="home-wrap">
         <SoundFX/>
-        <NewGameButtons disabled={this.state.mode !== 'home'} />
-        <Game mode={this.state.mode} disabled={this.state.mode === 'home'} />
+        {this.state.mode === 'home' &&
+          <NewGameButtons />
+        }
+        <Game />
       </div>
     );
   }

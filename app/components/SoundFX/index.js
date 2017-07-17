@@ -107,7 +107,7 @@ export default class SoundFX extends React.Component{
   }
 
   componentDidMount() {
-    AppStore.addListener('newTimer', this.onNewTimer);
+    AppStore.addListener('onNewTimer', this.onNewTimer);
     AppStore.addListener('incrementScore', this.onAnswer);
     AppStore.addListener('foul', this.onFoul);
     AppStore.addListener('tick', this.onTick);

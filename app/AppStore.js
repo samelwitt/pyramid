@@ -1,140 +1,103 @@
 import { EventEmitter } from "fbemitter"
 import dispatcher from "./AppDispatcher"
-import { viewport } from './helpers/utils'
-//import firstRoundData from './data/first-round-data.json'
-//import winnersCircleData from './data/winners-circle-data.json'
 
 class AppStore extends EventEmitter {
 
   mode = 'home'
-  initialTime = 0
   timerPlaying = false
-  currentAnswer = null
+  initialTime = 0
   currentPlayer = -1
   score = {
     total: [0,0],
-    currentRound: 0
-  }
-
-  getCurrentPlayer() {
-    //console.log('getCurrentPlayer')
-    return this.currentPlayer
-  }
-
-  onWindowResize() {
-    this.viewport = viewport()
-    this.emit('windowResize')
-  }
-  newTimer(which) {
-    this.initialTime = 0
-    this.mode = which
-    this.initialTime = which === 'firstRound' ? 30 : 60
-    this.score.currentRound = 0
-    this.emit('newTimer');
-  }
-  clearTimer() {
-    this.initialTime = 0
-    this.playPauseTimer({force: true})
-    this.mode = 'home'
-    this.currentAnswer = null
-    this.onSetPlayer(-1)
-    this.score.currentRound = 0
-    this.emit('clearTimer');
-  }
-  onTimesUp() {
-    this.clearTimer()
-    this.emit('timesUp');
-  }
-  playPauseTimer(opts) {
-    this.timerPlaying = opts.force ? false : !this.timerPlaying
-    this.emit('playPauseTimer')
-  }
-  //onAnswer() {
-  //  //this.currentAnswer = which
-  //  this.emit('onAnswer')
-  //}
-  onFoul() {
-    //this.currentAnswer = which
-    this.emit('foul')
-  }
-  onWin() {
-    this.timerPlaying = false
-    if (this.mode !== 'winnersCircle') {
-      this.clearTimer()
-    }
-    this.emit('onWin')
-  }
-  onTick() {
-    this.emit('tick')
-  }
-  onIncrementScore() {
-    //console.log('onIncrementScore')
-    this.score.currentRound ++
-    this.score.total[this.currentPlayer] ++
-    this.emit('incrementScore')
-  }
-  onSetPlayer(i) {
-    //console.log('app store onSetPlayer', i)
-    this.currentPlayer = i
-    this.emit('setPlayer')
-  }
-  onClearGame() {
-    this.clearTimer()
-    this.score.total = [0,0]
-    this.emit('clearGame');
+    currentRound: 0,
+    goal: 0
   }
 
   handleActions(action) {
     switch (action.type) {
-      case 'ON_WINDOW_RESIZE': {
-        this.onWindowResize();
+
+      case 'NEW_GAME': {
+        this.initialTime = 0
+        this.handleToggleTimer({stop: true})
+        this.mode = 'home'
+        this.currentPlayer = -1
+        this.score.currentRound = 0
+        this.score.total = [0,0]
+        this.score.goal = 0
+        this.emit('newGame');
         break;
       }
+
       case 'NEW_TIMER': {
-        this.newTimer(action.which);
+        this.handleToggleTimer({stop: true})
+        this.mode = action.which
+        this.currentPlayer = action.who
+        this.initialTime = action.which === 'firstRound' ? 30 : 60
+        this.score.goal = action.which === 'firstRound' ? 7 : 6
+        this.score.currentRound = 0
+        this.emit('newTimer')
         break;
       }
-      case 'CLEAR_TIMER': {
-        this.clearTimer();
+
+      case 'TOGGLE_TIMER': {
+        this.handleToggleTimer(action.opts)
         break;
       }
-      case 'PLAY_PAUSE_TIMER': {
-        this.playPauseTimer(action.opts);
+
+      case 'RIGHT_ANSWER': {
+        this.score.currentRound ++
+        this.score.total[this.currentPlayer] ++
+        this.emit('rightAnswer')
+        if (this.score.currentRound === this.score.goal) {
+          this.handleToggleTimer({stop: true})
+          this.currentPlayer = -1
+          if (this.mode !== 'winnersCircle') {
+            setTimeout(( ) => {
+              this.mode = 'home'
+            }, 2000)
+          }
+          this.emit('win')
+        }
         break;
       }
-/*      case 'ON_ANSWER': {
-        this.onAnswer();
-        break;
-      }*/
+
       case 'FOUL': {
-        this.onFoul();
+        this.emit('foul')
         break;
       }
-      case 'ON_WIN': {
-        this.onWin();
+
+      case 'CANCEL_TIMER': {
+        this.handleToggleTimer({stop: true})
+        this.currentPlayer = -1
+        this.mode = 'home'
+        this.emit('cancelTimer')
         break;
       }
-      case 'ON_TICK': {
-        this.onTick();
+
+      case 'TICK': {
+        this.emit('tick')
         break;
       }
+
       case 'TIMES_UP': {
-        this.onTimesUp();
-        break;
-      }
-      case 'CLEAR_GAME': {
-        this.onClearGame();
-        break;
-      }
-      case 'INCREMENT_SCORE': {
-        this.onIncrementScore()
-        break;
-      }
-      case 'SET_PLAYER': {
-        this.onSetPlayer(action.i)
+        this.handleToggleTimer({stop: true})
+        this.currentPlayer = -1
+        this.mode = 'home'
+        this.emit('timesUp');
         break;
       }
     }
+  }
+
+  handleToggleTimer = (opts = {}) => {
+    if (opts.start) {
+      this.timerPlaying = true
+    } else if (opts.stop) {
+      this.timerPlaying = false
+    } else {
+      this.timerPlaying = !this.timerPlaying
+    }
+    this.emit('toggleTimer')
   }
 
 }

@@ -8,13 +8,11 @@ import './app.less'
 export default class App extends React.Component {
 
   componentWillMount() {
-    //Utils.throttle(window, 'resize', AppActions.onWindowResize);
-    //this.windowResizeToken = AppStore.addListener('onWindowResize', ()=> {/*do something*/});
+    //
   }
 
   componentWillUnmount() {
-    //Utils.deThrottle(window, 'resize', AppActions.onWindowResize);
-    //this.windowResizeToken.remove();
+    //
   }
 
   render() {

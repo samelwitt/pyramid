@@ -1,45 +1,31 @@
 import dispatcher from "./AppDispatcher";
 
-export function onWindowResize() {
-  dispatcher.dispatch({
-    type: 'ON_WINDOW_RESIZE',
-  });
-}
-export function newTimer(which) {
+export function newTimer(which, who) {
   dispatcher.dispatch({
     type: 'NEW_TIMER',
-    which
+    which,
+    who
   });
 }
-export function clearTimer() {
+export function cancelTimer() {
   dispatcher.dispatch({
-    type: 'CLEAR_TIMER'
+    type: 'CANCEL_TIMER'
   });
 }
-export function playPauseTimer(opts = {force: false}) {
+export function toggleTimer(opts) {
   dispatcher.dispatch({
-    type: 'PLAY_PAUSE_TIMER',
+    type: 'TOGGLE_TIMER',
     opts
   });
 }
-/*export function onAnswer() {
-  dispatcher.dispatch({
-    type: 'ON_ANSWER'
-  });
-}*/
 export function foul() {
   dispatcher.dispatch({
     type: 'FOUL'
   });
 }
-export function onWin() {
+export function tick() {
   dispatcher.dispatch({
-    type: 'ON_WIN'
-  });
-}
-export function onTick() {
-  dispatcher.dispatch({
-    type: 'ON_TICK'
+    type: 'TICK'
   });
 }
 export function timesUp() {
@@ -47,19 +33,13 @@ export function timesUp() {
     type: 'TIMES_UP'
   });
 }
-export function clearGame() {
+export function newGame() {
   dispatcher.dispatch({
-    type: 'CLEAR_GAME'
+    type: 'NEW_GAME'
   });
 }
-export function incrementScore() {
+export function rightAnswer() {
   dispatcher.dispatch({
-    type: 'INCREMENT_SCORE'
-  });
-}
-export function setPlayer(i) {
-  dispatcher.dispatch({
-    type: 'SET_PLAYER',
-    i
+    type: 'RIGHT_ANSWER'
   });
 }
