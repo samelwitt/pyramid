@@ -23,7 +23,8 @@ export default class App extends React.Component {
     });
 
     return (
-      <div id="main">
+      <div id="app">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:400" rel="stylesheet"/>
         <div id="content">
           {children}
         </div>

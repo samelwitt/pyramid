@@ -120,7 +120,7 @@ config = {
       },
       //*** bundled images
       {
-        test: /\.(png|jpg|svg|mp3)$/,
+        test: /\.(png|jpg|svg|mp3|ttf)$/,
         use: {
           loader: 'file-loader',
           options: {

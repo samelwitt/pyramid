@@ -5,7 +5,9 @@ import * as AppActions from '../../AppActions'
 
 import './timer.less'
 
-let countdown
+let countdown,
+  roundDelay = 1000,
+  winnersCircleDelay = 2000
 
 export default class Timer extends React.Component{
 
@@ -31,19 +33,38 @@ export default class Timer extends React.Component{
     mode: null
   }
 
+  countdown = false
+  roundDelay = 1000
+  winnersCircleDelay = 2000
+
   decrement = () => {
     if (this.state.isPlaying) {
       this.setState({
         timeRemaining: this.state.timeRemaining - 1
       })
       if (this.state.timeRemaining < 1) {
-        clearInterval(countdown)
+        clearInterval(this.countdown)
         this.props.completeCallback()
       }
       else if (this.state.mode === 'winnersCircle') {
         AppActions.onTick()
       }
     }
+  }
+
+  reset = () => {
+    clearInterval(this.countdown)
+    this.countdown = false
+  }
+
+  componentWillMount() {
+    this.listeners = [
+      AppStore.addListener('clearTimer', this.reset)
+    ]
+  }
+
+  componentWillUnmount() {
+    this.listeners.remove()
   }
 
   componentWillReceiveProps(newProps) {
@@ -59,14 +80,24 @@ export default class Timer extends React.Component{
     }
   }
 
-  tock() {
-    if (!countdown) {
+  startCountDown = () => {
+    this.countdown = setInterval(()=>{
+      this.decrement()
+    },1000)
+  }
+
+  tock = () =>{
+    if (!this.countdown && this.state.isPlaying) {
+      let delay
       this.setState({
-        mode: AppStore.getMode()
+        mode: AppStore.mode
       })
-      countdown = setInterval(()=>{
-        this.decrement()
-      },1000)
+      if (AppStore.mode === 'winnersCircle') {
+        delay = this.winnersCircleDelay
+      } else {
+        delay = this.roundDelay
+      }
+      setTimeout(this.startCountDown, delay)
     }
 
   }

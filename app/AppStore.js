@@ -10,18 +10,15 @@ class AppStore extends EventEmitter {
   initialTime = 0
   timerPlaying = false
   currentAnswer = null
+  currentPlayer = -1
+  score = {
+    total: [0,0],
+    currentRound: 0
+  }
 
-  getMode() {
-    return this.mode
-  }
-  getInitialTime() {
-    return this.initialTime
-  }
-  isTimerPlaying() {
-    return this.timerPlaying
-  }
-  getCurrentAnswer() {
-    return this.currentAnswer
+  getCurrentPlayer() {
+    //console.log('getCurrentPlayer')
+    return this.currentPlayer
   }
 
   onWindowResize() {
@@ -29,36 +26,62 @@ class AppStore extends EventEmitter {
     this.emit('windowResize')
   }
   newTimer(which) {
+    this.initialTime = 0
     this.mode = which
     this.initialTime = which === 'firstRound' ? 30 : 60
+    this.score.currentRound = 0
     this.emit('newTimer');
   }
   clearTimer() {
     this.initialTime = 0
-    this.timerPlaying = false
+    this.playPauseTimer({force: true})
     this.mode = 'home'
+    this.currentAnswer = null
+    this.onSetPlayer(-1)
+    this.score.currentRound = 0
     this.emit('clearTimer');
   }
   onTimesUp() {
+    this.clearTimer()
     this.emit('timesUp');
   }
   playPauseTimer(opts) {
     this.timerPlaying = opts.force ? false : !this.timerPlaying
     this.emit('playPauseTimer')
   }
-  onAnswer() {
-    //this.currentAnswer = which
-    this.emit('onAnswer')
-  }
+  //onAnswer() {
+  //  //this.currentAnswer = which
+  //  this.emit('onAnswer')
+  //}
   onFoul() {
     //this.currentAnswer = which
     this.emit('foul')
   }
   onWin() {
+    this.timerPlaying = false
+    if (this.mode !== 'winnersCircle') {
+      this.clearTimer()
+    }
     this.emit('onWin')
   }
   onTick() {
     this.emit('tick')
+  }
+  onIncrementScore() {
+    //console.log('onIncrementScore')
+    this.score.currentRound ++
+    this.score.total[this.currentPlayer] ++
+    this.emit('incrementScore')
+  }
+  onSetPlayer(i) {
+    //console.log('app store onSetPlayer', i)
+    this.currentPlayer = i
+    this.emit('setPlayer')
+  }
+  onClearGame() {
+    this.clearTimer()
+    this.score.total = [0,0]
+    this.emit('clearGame');
   }
 
   handleActions(action) {
@@ -79,10 +102,10 @@ class AppStore extends EventEmitter {
         this.playPauseTimer(action.opts);
         break;
       }
-      case 'ON_ANSWER': {
+/*      case 'ON_ANSWER': {
         this.onAnswer();
         break;
-      }
+      }*/
       case 'FOUL': {
         this.onFoul();
         break;
@@ -97,6 +120,18 @@ class AppStore extends EventEmitter {
       }
       case 'TIMES_UP': {
         this.onTimesUp();
+        break;
+      }
+      case 'CLEAR_GAME': {
+        this.onClearGame();
+        break;
+      }
+      case 'INCREMENT_SCORE': {
+        this.onIncrementScore()
+        break;
+      }
+      case 'SET_PLAYER': {
+        this.onSetPlayer(action.i)
         break;
       }
     }

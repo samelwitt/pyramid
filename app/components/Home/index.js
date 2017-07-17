@@ -8,12 +8,12 @@ import AppStore from '../../AppStore'
 export default class Home extends React.Component {
 
   state = {
-    mode: AppStore.getMode()
+    mode: AppStore.mode
   }
 
   handleGameStatus = () => {
     this.setState({
-      mode: AppStore.getMode()
+      mode: AppStore.mode
     })
   }
 

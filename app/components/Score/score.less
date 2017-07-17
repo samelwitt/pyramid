@@ -1,0 +1,38 @@
+@import '../App/fonts';
+
+@keyframes bulge {
+  0% {transform: scale(1);}
+  10% {opacity: 0;}
+  20% {opacity: 1;}
+  30% {opacity: 0;}
+  40% {opacity: 1;}
+  50% {transform: scale(1.5); opacity: 0;}
+  60% {opacity: 1;}
+  70% {opacity: 0;}
+  80% {opacity: 1;}
+  90% {opacity: 0;}
+  100% {transform: scale(1);opacity: 1;}
+}
+
+@keyframes blink {
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.score-wrap {
+  text-align: center;
+  color: #fff;
+  font-family: digital, sans-serif;
+  font-size: 10rem;
+  line-height: 1;
+  text-shadow: #000 0 0 30px;
+  transform-origin: center;
+  &.active {
+    //animation: bulge 1s;
+    animation: blink .2s 10;
+  }
+  .score-caption {
+    font-size: 4rem;
+  }
+}

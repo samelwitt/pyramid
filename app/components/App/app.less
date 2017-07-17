@@ -1,11 +1,46 @@
+@import 'vars';
+
 html {
   height: 100%;
 }
 body {
+  height: 100%;
+  font-family: 'Oswald', sans-serif;
+  font-size: 10vw;
+  text-transform: uppercase;
+}
+
+#main {
+  height: 100%;
   background: transparent url(../../img/main-bg.jpg) no-repeat center;
   background-size: cover;
 }
 
 * {
   box-sizing: border-box;
+}
+
+//bootstrap overrides
+button {
+  text-transform: uppercase;
+}
+.btn-primary {
+  width: 100%;
+  border-color: @red;
+  border-radius: 0;
+  border-width: 3px;
+  color: #000;
+  background-color: @beige;
+  &:focus, &:active {
+    color: #000;
+    border-color: @red;
+    background-color: @beige;
+    outline: none;
+  }
+  &:hover {
+    border-color: @gold;
+    background-color: @beige;
+    color: #000;
+    outline: none;
+  }
 }

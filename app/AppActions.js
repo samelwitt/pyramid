@@ -22,11 +22,11 @@ export function playPauseTimer(opts = {force: false}) {
     opts
   });
 }
-export function onAnswer() {
+/*export function onAnswer() {
   dispatcher.dispatch({
     type: 'ON_ANSWER'
   });
-}
+}*/
 export function foul() {
   dispatcher.dispatch({
     type: 'FOUL'
@@ -45,5 +45,21 @@ export function onTick() {
 export function timesUp() {
   dispatcher.dispatch({
     type: 'TIMES_UP'
+  });
+}
+export function clearGame() {
+  dispatcher.dispatch({
+    type: 'CLEAR_GAME'
+  });
+}
+export function incrementScore() {
+  dispatcher.dispatch({
+    type: 'INCREMENT_SCORE'
+  });
+}
+export function setPlayer(i) {
+  dispatcher.dispatch({
+    type: 'SET_PLAYER',
+    i
   });
 }

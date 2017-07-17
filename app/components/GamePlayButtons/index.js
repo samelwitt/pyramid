@@ -7,7 +7,7 @@ import SoundFX from '../SoundFX'
 export default class GamePlayButtons extends React.Component {
 
   state = {
-    isTimerPlaying: AppStore.isTimerPlaying(),
+    isTimerPlaying: AppStore.timerPlaying,
     disabled: this.props.disabled
   }
 
@@ -16,16 +16,11 @@ export default class GamePlayButtons extends React.Component {
   }
 
   onRightAnswer = () => {
-    AppActions.onAnswer()
+    AppActions.incrementScore()
   }
 
   onFoul = () => {
     AppActions.foul()
-  }
-
-  onWin = () => {
-    AppActions.playPauseTimer({force: true})
-    AppActions.onWin()
   }
 
   onClear = () => {
@@ -34,12 +29,18 @@ export default class GamePlayButtons extends React.Component {
 
   handleTogglePlay = () => {
     this.setState({
-      isTimerPlaying: AppStore.isTimerPlaying()
+      isTimerPlaying: AppStore.timerPlaying
     })
   }
 
   componentWillMount() {
-    AppStore.addListener('playPauseTimer', this.handleTogglePlay);
+    this.listeners = [
+      AppStore.addListener('playPauseTimer', this.handleTogglePlay)
+    ]
+  }
+
+  componentWillUnmount() {
+    this.listeners.remove()
   }
 
   componentWillReceiveProps(newProps) {
@@ -68,18 +69,13 @@ export default class GamePlayButtons extends React.Component {
             <Button onClick={this.togglePlay} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>{this.state.isTimerPlaying ? 'Pause':'Start'} Clock</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onRightAnswer} bsStyle="info" bsSize="large" disabled={this.state.disabled}>Right Answer</Button>
+            <Button onClick={this.onRightAnswer} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>Right Answer</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onFoul} bsStyle="danger" bsSize="large" disabled={this.state.disabled}>Foul!</Button>
+            <Button onClick={this.onFoul} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>Foul!</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onWin} bsStyle="success" bsSize="large" disabled={this.state.disabled}>Win!</Button>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xs-12">
-            <Button onClick={this.onClear} bsStyle="warning" bsSize="large" disabled={this.state.disabled}>
+            <Button onClick={this.onClear} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>
               Reset
             </Button>
           </div>
