@@ -107,14 +107,14 @@ export default class SoundFX extends React.Component{
   }
 
   componentDidMount() {
-    AppStore.addListener('onNewTimer', this.onNewTimer);
-    AppStore.addListener('incrementScore', this.onAnswer);
-    AppStore.addListener('foul', this.onFoul);
-    AppStore.addListener('tick', this.onTick);
-    AppStore.addListener('onWin', this.onWin);
-    AppStore.addListener('clearTimer', this.resetAllSounds);
-    AppStore.addListener('timesUp', this.onTimesUp);
-    AppStore.addListener('playPauseTimer', this.onToggleTimer);
+    //AppStore.addListener('onNewTimer', this.onNewTimer);
+    //AppStore.addListener('incrementScore', this.onAnswer);
+    //AppStore.addListener('foul', this.onFoul);
+    //AppStore.addListener('tick', this.onTick);
+    //AppStore.addListener('onWin', this.onWin);
+    //AppStore.addListener('clearTimer', this.resetAllSounds);
+    //AppStore.addListener('timesUp', this.onTimesUp);
+    //AppStore.addListener('playPauseTimer', this.onToggleTimer);
   }
 
   render() {

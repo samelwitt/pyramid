@@ -1,6 +1,6 @@
 import dispatcher from "./AppDispatcher";
 
-export function newTimer(which, who) {
+export function newTimer(which, who = -1) {
   dispatcher.dispatch({
     type: 'NEW_TIMER',
     which,

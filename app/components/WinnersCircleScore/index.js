@@ -1,24 +1,32 @@
 import React from 'react'
 import Triangle from '../Triangle'
+import AppStore from '../../AppStore'
 
 import './winners-circle-score.less'
 
 export default class WinnersCircleScore extends React.Component {
 
   state = {
-    score: this.props.score
+    score: 0
   }
 
-  componentWillReceiveProps(newProps) {
-    if (newProps.score !== this.props.score) {
-      this.setState({
-        score: newProps.score
-      }, () => {
-        if (this.state.score === 6) {
+  setScore = () => {
+    this.setState({
+      score: AppStore.score.currentRound
+    })
+  }
 
-        }
-      })
-    }
+  componentWillMount() {
+    this.listeners = [
+      AppStore.addListener('rightAnswer', this.setScore),
+      AppStore.addListener('newGame', this.setScore)
+    ]
+  }
+
+  componentWillUnmount() {
+    this.listeners.forEach((listener, i, arr) => {
+      listener.remove()
+    })
   }
 
   render() {

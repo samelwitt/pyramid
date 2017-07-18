@@ -2,29 +2,27 @@ import React from 'react'
 import {Button} from 'react-bootstrap'
 import * as AppActions from '../../AppActions'
 import AppStore from '../../AppStore'
-import SoundFX from '../SoundFX'
 
 export default class GamePlayButtons extends React.Component {
 
   state = {
-    isTimerPlaying: AppStore.timerPlaying,
-    disabled: this.props.disabled
+    isTimerPlaying: AppStore.timerPlaying
   }
 
   togglePlay = () => {
-    AppActions.playPauseTimer()
+    AppActions.toggleTimer()
   }
 
   onRightAnswer = () => {
-    AppActions.incrementScore()
+    AppActions.rightAnswer()
   }
 
   onFoul = () => {
     AppActions.foul()
   }
 
-  onClear = () => {
-    AppActions.clearTimer()
+  onCancel = () => {
+    AppActions.cancelTimer()
   }
 
   handleTogglePlay = () => {
@@ -35,30 +33,18 @@ export default class GamePlayButtons extends React.Component {
 
   componentWillMount() {
     this.listeners = [
-      AppStore.addListener('playPauseTimer', this.handleTogglePlay)
+      AppStore.addListener('toggleTimer', this.handleTogglePlay)
     ]
   }
 
   componentWillUnmount() {
-    this.listeners.remove()
+    this.listeners.forEach((listener, i, arr) => {
+      listener.remove()
+    })
   }
 
-  componentWillReceiveProps(newProps) {
-    if (newProps.timeRemaining !== this.props.timeRemaining) {
-      this.setState({
-        timeRemaining: newProps.timeRemaining
-      })
-    }
-    if (newProps.isPlaying !== this.props.isPlaying) {
-      this.setState({
-        isPlaying: newProps.isPlaying
-      }, this.tock)
-    }
-    if (newProps.disabled !== this.props.disabled) {
-      this.setState({
-        disabled: newProps.disabled
-      })
-    }
+  componentWillReceiveProps() {
+    //
   }
 
   render() {
@@ -66,17 +52,17 @@ export default class GamePlayButtons extends React.Component {
       <div className="container game-play-buttons-wrap">
         <div className="row">
           <div className="col-xs-3">
-            <Button onClick={this.togglePlay} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>{this.state.isTimerPlaying ? 'Pause':'Start'} Clock</Button>
+            <Button onClick={this.togglePlay} bsStyle="primary" bsSize="large">{this.state.isTimerPlaying ? 'Pause':'Start/Resume'} Round</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onRightAnswer} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>Right Answer</Button>
+            <Button onClick={this.onRightAnswer} bsStyle="primary" bsSize="large">Correct!</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onFoul} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>Foul!</Button>
+            <Button onClick={this.onFoul} bsStyle="primary" bsSize="large">Foul!</Button>
           </div>
           <div className="col-xs-3">
-            <Button onClick={this.onClear} bsStyle="primary" bsSize="large" disabled={this.state.disabled}>
-              Reset
+            <Button onClick={this.onCancel} bsStyle="primary" bsSize="large">
+              Cancel
             </Button>
           </div>
         </div>

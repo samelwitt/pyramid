@@ -1,29 +1,46 @@
 import React from 'react'
+import AppStore from '../../AppStore'
 
 import './score.less'
 
 export default class Score extends React.Component {
 
   state = {
-    score: this.props.score,
+    score: 0,
     active: this.props.active,
-    team: this.props.team
+    player: this.props.player
+  }
+
+  setScore = () => {
+    if (this.state.active) {
+      this.setState({
+        score: AppStore.score.total[this.state.player -1]
+      })
+    }
+  }
+
+  componentWillMount() {
+    this.listeners = [
+      AppStore.addListener('rightAnswer', this.setScore),
+      AppStore.addListener('newGame', this.setScore)
+    ]
+  }
+
+  componentWillUnmount() {
+    this.listeners.forEach((listener, i, arr) => {
+      listener.remove()
+    })
   }
 
   componentWillReceiveProps(newProps) {
-    if (newProps.score !== this.props.score) {
-      this.setState({
-        score: newProps.score
-      })
-    }
     if (newProps.active !== this.props.active) {
       this.setState({
         active: newProps.active
       })
     }
-    if (newProps.team !== this.props.team) {
+    if (newProps.active !== this.props.active) {
       this.setState({
-        team: newProps.team
+        active: newProps.active
       })
     }
   }
@@ -32,7 +49,7 @@ export default class Score extends React.Component {
     return (
       <div className={'score-wrap ' + (this.state.active ? 'active' : '')}>
         <div>{this.state.score}</div>
-        <div className="score-caption">Team {this.state.team}</div>
+        <div className="score-caption">Team {this.state.player}</div>
       </div>
     );
   }

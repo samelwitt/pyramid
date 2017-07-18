@@ -48,7 +48,9 @@ export default class Game extends React.Component {
   }
 
   componentWillUnmount() {
-    this.listeners.remove()
+    this.listeners.forEach((listener, i, arr) => {
+      listener.remove()
+    })
   }
 
   render() {

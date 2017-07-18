@@ -10,18 +10,12 @@ import logoSm from '../../img/logo-sm.png'
 
 export default class NewGameButtons extends React.Component {
 
-  state = {
-    disabled: this.props.disabled
-  }
-
   newFirstRound = [
     () => {
-      AppActions.setPlayer(0)
-      AppActions.newTimer('firstRound')
+      AppActions.newTimer('firstRound', 0)
     },
     () => {
-      AppActions.setPlayer(1)
-      AppActions.newTimer('firstRound')
+      AppActions.newTimer('firstRound', 1)
     }
   ]
 
@@ -30,20 +24,16 @@ export default class NewGameButtons extends React.Component {
   }
 
   newGame = () => {
-    AppActions.clearGame()
+    AppActions.newGame()
   }
 
-  componentWillReceiveProps(newProps) {
-    if (newProps.disabled !== this.props.disabled) {
-      this.setState({
-        disabled: newProps.disabled
-      })
-    }
+  componentWillReceiveProps() {
+    //
   }
 
   render() {
     return(
-      <div className={this.state.disabled ? 'container new-game-buttons-wrap disabled' : 'container new-game-buttons-wrap'}>
+      <div className="container new-game-buttons-wrap">
         <div className="inner">
           <img className="logo" src={logoSm} alt=""/>
           <div className="row">
