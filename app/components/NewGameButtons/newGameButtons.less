@@ -11,9 +11,17 @@
   z-index: 99;
   background-color: rgba(0,0,0,.5);
   .logo {
+    position: relative;
     display: block;
     width: 25%;
     margin: 0 auto;
+    cursor: pointer;
+    z-index: 99;
+    transition: transform 200ms;
+    &:hover {
+      transform: scale(1.3);
+      transform-origin: center;
+    }
   }
   .inner {
     position: relative;

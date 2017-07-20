@@ -1,5 +1,5 @@
-import {EventEmitter} from 'fbemitter';
+import {EventEmitter} from 'fbemitter'
 
-const emitter = new EventEmitter();
+const emitter = new EventEmitter()
 
-export default emitter;
+export default emitter

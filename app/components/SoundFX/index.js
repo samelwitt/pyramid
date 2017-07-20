@@ -35,7 +35,7 @@ export default class SoundFX extends React.Component{
     })
   }
 
-  onAnswer = () => {
+  onRightAnswer = () => {
     if (this.state.mode === 'winnersCircle') {
       sounds['dong'].load()
       this.play('dong')
@@ -46,6 +46,7 @@ export default class SoundFX extends React.Component{
   }
 
   onNewTimer = () => {
+    this.resetAllSounds()
     this.setState({
       mode: AppStore.mode,
       initiated: false
@@ -53,7 +54,6 @@ export default class SoundFX extends React.Component{
   )}
 
   onToggleTimer = () => {
-
     if (!this.state.initiated) {
       if (this.state.mode === 'winnersCircle') {
         this.play('dick2')
@@ -81,6 +81,7 @@ export default class SoundFX extends React.Component{
 
   onTimesUp = () => {
     this.play('buzzz')
+    this.resetAllSounds()
   }
 
   onWin = () => {
@@ -94,8 +95,19 @@ export default class SoundFX extends React.Component{
   resetAllSounds = (cb = ()=> false) => {
     Object.keys(sounds).map((key,i,arr) => {
       sounds[key].pause()
+      sounds[key].currentTime = 0
     })
     cb()
+  }
+
+  toggleTheme = () => {
+    if (sounds.theme.paused) {
+      sounds.theme.play()
+    }
+    else {
+      sounds.theme.pause()
+      sounds.theme.currentTime = 0
+    }
   }
 
   play = (which) => {
@@ -104,17 +116,27 @@ export default class SoundFX extends React.Component{
 
   componentWillMount() {
     this.preload()
+    this.listeners = [
+      AppStore.addListener('rightAnswer', this.onRightAnswer),
+      AppStore.addListener('win', this.onWin),
+      AppStore.addListener('foul', this.onFoul),
+      AppStore.addListener('tick', this.onTick),
+      AppStore.addListener('toggleTimer', this.onToggleTimer),
+      AppStore.addListener('timesUp', this.onTimesUp),
+      AppStore.addListener('newTimer', this.onNewTimer),
+      AppStore.addListener('cancelTimer', this.resetAllSounds),
+      AppStore.addListener('toggleTheme', this.toggleTheme)
+    ]
   }
 
   componentDidMount() {
-    //AppStore.addListener('onNewTimer', this.onNewTimer);
-    //AppStore.addListener('incrementScore', this.onAnswer);
-    //AppStore.addListener('foul', this.onFoul);
-    //AppStore.addListener('tick', this.onTick);
-    //AppStore.addListener('onWin', this.onWin);
-    //AppStore.addListener('clearTimer', this.resetAllSounds);
-    //AppStore.addListener('timesUp', this.onTimesUp);
-    //AppStore.addListener('playPauseTimer', this.onToggleTimer);
+    console.log(sounds.theme.paused)
+  }
+
+  componentWillUnmount() {
+    this.listeners.forEach((listener, i, arr) => {
+      listener.remove()
+    })
   }
 
   render() {

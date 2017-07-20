@@ -43,3 +43,9 @@ export function rightAnswer() {
     type: 'RIGHT_ANSWER'
   });
 }
+export function toggleTheme() {
+  dispatcher.dispatch({
+    type: 'TOGGLE_THEME'
+  });
+}
+

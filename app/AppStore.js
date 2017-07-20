@@ -29,7 +29,7 @@ class AppStore extends EventEmitter {
       }
 
       case 'NEW_TIMER': {
-        this.handleToggleTimer({stop: true})
+        //this.handleToggleTimer({stop: true})
         this.mode = action.which
         this.currentPlayer = action.who
         this.initialTime = action.which === 'firstRound' ? 30 : 60
@@ -54,9 +54,11 @@ class AppStore extends EventEmitter {
           if (this.mode !== 'winnersCircle') {
             setTimeout(( ) => {
               this.mode = 'home'
+              this.emit('win')
             }, 2000)
+          } else {
+            this.emit('win')
           }
-          this.emit('win')
         }
         break;
       }
@@ -84,6 +86,11 @@ class AppStore extends EventEmitter {
         this.currentPlayer = -1
         this.mode = 'home'
         this.emit('timesUp');
+        break;
+      }
+
+      case 'TOGGLE_THEME': {
+        this.emit('toggleTheme');
         break;
       }
     }

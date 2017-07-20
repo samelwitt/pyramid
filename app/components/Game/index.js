@@ -20,7 +20,8 @@ export default class Game extends React.Component {
 
   setMode = () => {
     this.setState({
-      mode: AppStore.mode
+      mode: AppStore.mode,
+      currentPlayer: -1
     })
   }
 
@@ -37,11 +38,18 @@ export default class Game extends React.Component {
         this.setMode()
         this.setPlayer()
       }),
-      AppStore.addListener('cancelTimer', this.setMode),
-      AppStore.addListener('timesUp', this.setMode),
+      AppStore.addListener('cancelTimer', () => {
+        this.setMode()
+        this.setPlayer()
+      }),
+      AppStore.addListener('timesUp', () => {
+        this.setMode()
+        this.setPlayer()
+      }),
       AppStore.addListener('win', () => {
         if (this.state.mode !== 'winnersCircle') {
           this.setMode()
+          this.setPlayer()
         }
       })
     ]

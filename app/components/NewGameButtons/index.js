@@ -27,6 +27,10 @@ export default class NewGameButtons extends React.Component {
     AppActions.newGame()
   }
 
+  toggleTheme = () => {
+    AppActions.toggleTheme()
+  }
+
   componentWillReceiveProps() {
     //
   }
@@ -35,7 +39,7 @@ export default class NewGameButtons extends React.Component {
     return(
       <div className="container new-game-buttons-wrap">
         <div className="inner">
-          <img className="logo" src={logoSm} alt=""/>
+          <img onClick={this.toggleTheme} className="logo" src={logoSm} alt=""/>
           <div className="row">
             <div className="col-xs-6">
               <Button onClick={this.newFirstRound[0]} bsStyle="primary" bsSize="large">New Round Team 1</Button>

@@ -9,7 +9,7 @@ export default class Score extends React.Component {
     score: 0,
     active: this.props.active,
     player: this.props.player
-  }
+  };
 
   setScore = () => {
     if (this.state.active) {

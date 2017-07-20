@@ -75,10 +75,15 @@ export default class Timer extends React.Component{
     }
   }
 
+  clearTimer = () => {
+    clearInterval(this.countdown)
+  }
+
   componentWillMount() {
     this.listeners = [
       AppStore.addListener('newTimer', this.initTimer),
-      AppStore.addListener('toggleTimer', this.setPlayStatus)
+      AppStore.addListener('toggleTimer', this.setPlayStatus),
+      AppStore.addListener('cancelTimer', this.clearTimer)
     ]
   }
 

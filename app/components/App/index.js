@@ -1,24 +1,20 @@
-import React from 'react';
-import * as AppActions from '../../AppActions';
-import AppStore from '../../AppStore';
-import * as Utils from '../../helpers/utils';
+import React from 'react'
 
 import './app.less'
 
 export default class App extends React.Component {
-
-  componentWillMount() {
+  componentWillMount () {
     //
   }
 
-  componentWillUnmount() {
+  componentWillUnmount () {
     //
   }
 
-  render() {
+  render () {
     const children = React.Children.map(this.props.children, (child) => {
-     return React.cloneElement(child);
-    });
+      return React.cloneElement(child)
+    })
 
     return (
       <div id="app">
@@ -27,6 +23,6 @@ export default class App extends React.Component {
           {children}
         </div>
       </div>
-    );
+    )
   }
 }
