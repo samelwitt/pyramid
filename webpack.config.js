@@ -103,7 +103,7 @@ config = {
         test: /\.jsx?$/,
         exclude: /node_modules/,
         use: [
-          'react-hot-loader/webpack',
+          // 'react-hot-loader/webpack',
 
           {
             loader: 'babel-loader',

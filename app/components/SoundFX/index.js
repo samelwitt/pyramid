@@ -81,7 +81,7 @@ export default class SoundFX extends React.Component{
 
   onTimesUp = () => {
     this.play('buzzz')
-    this.resetAllSounds()
+    setTimeout(this.resetAllSounds, 1000)
   }
 
   onWin = () => {

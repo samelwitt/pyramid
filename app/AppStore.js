@@ -18,7 +18,7 @@ class AppStore extends EventEmitter {
 
       case 'NEW_GAME': {
         this.initialTime = 0
-        this.handleToggleTimer({stop: true})
+        //this.handleToggleTimer({stop: true})
         this.mode = 'home'
         this.currentPlayer = -1
         this.score.currentRound = 0
@@ -104,6 +104,7 @@ class AppStore extends EventEmitter {
     } else {
       this.timerPlaying = !this.timerPlaying
     }
+    console.log('toggletimmer', this.timerPlaying)
     this.emit('toggleTimer')
   }
 
